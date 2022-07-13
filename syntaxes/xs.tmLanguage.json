@@ -1,0 +1,71 @@
+{
+    "$schema": "https://raw.fastgit.org/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "XScript 2",
+    "patterns": [
+        { "include": "#keywords" },
+        { "include": "#string" },
+        { "include": "#char" },
+        { "include": "#numbers" },
+        { "include": "#boolean" },
+        { "include": "#comments" },
+        { "include": "#externType" },
+        { "include": "#identifier" }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [{
+                "name": "keyword.control.xs",
+                "match": "\\b(if|else|switch|for|while|public|private|const|override|var|break|continue|extends|def|return|class|package|import)\\b"
+            }]
+        },
+        "string": {
+            "name": "string.quoted.double.xs",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [{
+                "name": "constant.character.escape.xs",
+                "match": "\\\\."
+            }]
+        },
+        "char": {
+            "name": "string.quoted.double.xs",
+            "begin": "'",
+            "end": "'",
+            "patterns": [{
+                "name": "constant.character.escape.xs",
+                "match": "\\\\."
+            }]
+        },
+        "numbers": {
+            "patterns": [{
+                "name": "constant.numeric.xs",
+                "match": "\\b(0x[0-9a-fA-F]+|[0-9]+(\\.[0-9]+)?)\\b"
+            }]
+        },
+        "boolean": {
+            "patterns": [{
+                "name": "constant.language.xs",
+                "match": "\\b(True|False)\\b"
+            }]
+        },
+        "comments": {
+            "patterns": [{
+                "name": "comment.line.number-sign.xs",
+                "match": "#.*$"
+            }]
+        },
+        "externType": {
+            "patterns": [{
+                "name": "support.class.xs",
+                "match": "\\b(Array|String)\\b"
+            }]
+        },
+        "identifier": {
+            "patterns": [{
+                "name": "variable.other.xs",
+                "match": "\\b[A-Za-z0-9_]+\\b"
+            }]
+        }
+    },
+    "scopeName": "source.xs"
+}
