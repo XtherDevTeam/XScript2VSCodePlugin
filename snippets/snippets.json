@@ -40,5 +40,12 @@
 			"for (${1:statment1};${2:condition};${3:statment}) {${4:statments}}"
 		],
 		"description": "For statement."
+	},
+	"cross-package-access-expression": {
+		"prefix": "@",
+		"body": [
+			"@{${1:\"packageName\"}} -> ${2:MemberExpression}"
+		],
+		"description": "Cross package access expression."
 	}
 }

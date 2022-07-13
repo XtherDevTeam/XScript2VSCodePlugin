@@ -3,7 +3,7 @@
     "publisher": "WingzhongZau",
     "displayName": "XScript 2",
     "description": "XScript 2 Programming Language supports for VSCode",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "engines": {
         "vscode": "^1.63.0"
     },

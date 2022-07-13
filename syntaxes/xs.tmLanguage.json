@@ -15,7 +15,7 @@
         "keywords": {
             "patterns": [{
                 "name": "keyword.control.xs",
-                "match": "\\b(if|else|switch|for|while|public|private|const|override|var|break|continue|extends|def|return|class|package|import)\\b"
+                "match": "\\b(if|else|switch|for|while|public|private|const|override|var|break|continue|extends|def|return|class|package|import|@)\\b"
             }]
         },
         "string": {
