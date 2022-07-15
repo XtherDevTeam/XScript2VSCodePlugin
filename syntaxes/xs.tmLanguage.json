@@ -15,7 +15,7 @@
         "keywords": {
             "patterns": [{
                 "name": "keyword.control.xs",
-                "match": "\\b(if|else|switch|for|while|public|private|const|override|var|break|continue|extends|def|return|class|package|import|@)\\b"
+                "match": "\\b(if|else|switch|for|while|public|private|const|override|var|break|continue|extends|def|return|class|package|import|new|@)\\b"
             }]
         },
         "string": {
@@ -51,7 +51,7 @@
         "comments": {
             "patterns": [{
                 "name": "comment.line.number-sign.xs",
-                "match": "#.*$"
+                "match": "//.*$"
             }]
         },
         "externType": {

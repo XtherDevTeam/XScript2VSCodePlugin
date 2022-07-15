@@ -47,5 +47,19 @@
 			"@{${1:\"packageName\"}} -> ${2:MemberExpression}"
 		],
 		"description": "Cross package access expression."
+	},
+	"new-expression": {
+		"prefix": "new",
+		"body": [
+			"new ${1:name}.${2:constructor}(${3:params})"
+		],
+		"description": "New expression."
+	},
+	"class-definition": {
+		"prefix": "class",
+		"body": [
+			"class ${1:name} ${2:extends ( )} {${3:methods}};"
+		],
+		"description": "Class definition."
 	}
 }
