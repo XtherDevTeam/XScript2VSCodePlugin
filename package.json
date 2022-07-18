@@ -3,7 +3,7 @@
     "publisher": "WingzhongZau",
     "displayName": "XScript 2",
     "description": "XScript 2 Programming Language supports for VSCode",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "engines": {
         "vscode": "^1.63.0"
     },
@@ -12,32 +12,26 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [
-            {
-                "id": "xs",
-                "aliases": [
-                    "xs0",
-                    "xs2"
-                ],
-                "extensions": [
-                    ".xs"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "xs",
-                "scopeName": "source.xs",
-                "path": "./syntaxes/xs.tmLanguage.json"
-            }
-        ],
-        "snippets": [
-            {
-                "language": "xs",
-                "path": "snippets/snippets.json"
-            }
-        ]
+        "languages": [{
+            "id": "xs",
+            "aliases": [
+                "xs0",
+                "xs2"
+            ],
+            "extensions": [
+                ".xs"
+            ],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "xs",
+            "scopeName": "source.xs",
+            "path": "./syntaxes/xs.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "xs",
+            "path": "snippets/snippets.json"
+        }]
     },
     "dependencies": {
         "vsce": "^2.7.0"

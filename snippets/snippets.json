@@ -16,28 +16,28 @@
 	"if": {
 		"prefix": "if",
 		"body": [
-			"if (${1:condition}) {${2:statments}}"
+			"if (${1:condition}) {}"
 		],
 		"description": "If statement."
 	},
 	"if-else": {
 		"prefix": "ifelse",
 		"body": [
-			"if (${1:condition}) {${2:statments}} else ${3:statment}"
+			"if (${1:condition}) {} else ${3:statment}"
 		],
 		"description": "If-else statement."
 	},
 	"while": {
 		"prefix": "while",
 		"body": [
-			"while (${1:condition}) {${2:statments}}"
+			"while (${1:condition}) {}"
 		],
 		"description": "While statement."
 	},
 	"for": {
 		"prefix": "for",
 		"body": [
-			"for (${1:statment1};${2:condition};${3:statment}) {${4:statments}}"
+			"for (${1:statment1};${2:condition};${3:statment}) {}"
 		],
 		"description": "For statement."
 	},
@@ -58,8 +58,15 @@
 	"class-definition": {
 		"prefix": "class",
 		"body": [
-			"class ${1:name} ${2:extends ( )} {${3:methods}};"
+			"class ${1:name} ${2:extends ( )} {};"
 		],
 		"description": "Class definition."
+	},
+	"native-class-declaration": {
+		"prefix": "class",
+		"body": [
+			"native_class ${1:name} in \"${2:path}\";"
+		],
+		"description": "Native class declaration."
 	}
 }
