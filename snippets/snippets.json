@@ -63,7 +63,7 @@
 		"description": "Class definition."
 	},
 	"native-class-declaration": {
-		"prefix": "class",
+		"prefix": "native",
 		"body": [
 			"native_class ${1:name} in \"${2:path}\";"
 		],
