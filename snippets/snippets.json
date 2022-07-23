@@ -72,7 +72,7 @@
 	"try-catch-statement": {
 		"prefix": "try",
 		"body": [
-			"try {} catch as ${1:identifier} {}${2: finally {}};"
+			"try {} catch as ${1:identifier} {};"
 		],
 		"description": "Try-catch statement."
 	}
