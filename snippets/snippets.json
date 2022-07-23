@@ -6,6 +6,13 @@
 		],
 		"description": "Define a function."
 	},
+	"def-in": {
+		"prefix": "defin",
+		"body": [
+			"def ${1:name} in ${2:identifier};"
+		],
+		"description": "Define a member."
+	},
 	"var": {
 		"prefix": "var",
 		"body": [
